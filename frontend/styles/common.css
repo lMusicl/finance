@@ -99,8 +99,7 @@ body {
     padding: 20px 50px 40px 20px;
 }
 
-.chart-wrapper {
+.content {
     width: 500px;
-    height: 500px;
-    margin: 0 auto;
+    height: 770px;
 }
