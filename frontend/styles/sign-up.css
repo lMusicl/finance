@@ -1,0 +1,65 @@
+html, body, .main {
+    height: 100%;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 398px;
+}
+
+.logo {
+    align-self: center;
+}
+
+.field {
+    display: flex;
+    width: 100%;
+}
+
+.form-floating>.form-control {
+    padding: 7px 13px;
+    min-height: 38px;
+    height: 38px;
+}
+
+.form-floating>.form-control::placeholder {
+    color: #6C757D;
+}
+
+.form-floating>label, .floatingInput {
+    display: none;
+}
+
+.form-floating>.form-control:focus {
+    padding: 7px 13px;
+}
+
+.account, .form-check-label {
+    font-size: 12px !important;
+}
