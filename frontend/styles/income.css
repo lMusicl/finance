@@ -1,0 +1,10 @@
+.income__categories__item, .income__categories__item-empty {
+    width: 352px;
+}
+
+
+.item_plus {
+    color: #CED4DA;
+    font-size: 28px;
+    font-weight: 500;
+}
