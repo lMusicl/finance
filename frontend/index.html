@@ -7,6 +7,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="libs/bootstrap.min.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/main-page.css">
 </head>
 <body>
 
@@ -81,7 +82,7 @@
                 <div class="account w-100">
                     <a href="#"
                        class="d-flex align-items-center link-body-emphasis text-decoration-none">
-                        <img src="static/images/icon.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <img src="static/images/icon.png" alt="account icon" class="rounded-circle me-2">
                         <div class="account_name">Dmitriy Mezhenskij</div>
                     </a>
                 </div>
@@ -90,9 +91,38 @@
     </div>
 
     <div class="content">
-
+        <div class="main__page">
+            <div class="container">
+                <div class="main__page__title h1 fw-bold text-primary-emphasis mb-5 pb-2">Главная</div>
+                <div class="main__page__buttons">
+                    <button class="main__page__button">Сегодня</button>
+                    <button class="main__page__button">Неделя</button>
+                    <button class="main__page__button">Месяц</button>
+                    <button class="main__page__button">Год</button>
+                    <button class="main__page__button">Все</button>
+                    <button class="main__page__button">Интервал</button>
+                    <label for="dateStart">c</label>
+                    <input type="date" class="date__input form-control" id="dateStart" placeholder="Дата">
+                    <label for="dateEnd">по</label>
+                    <input type="date" class="date__input form-control" id="dateEnd" placeholder="Дата">
+                </div>
+                <div class="main__page__charts">
+                    <div class="chart d-flex flex-column align-items-center">
+                        <div class="chart__title h1 fw-bold text-primary-emphasis mb-4">Доходы</div>
+                        <canvas id="income"></canvas>
+                    </div>
+                    <div class="chart__line"></div>
+                    <div class="chart d-flex flex-column align-items-center">
+                        <div class="chart__title h1 fw-bold text-primary-emphasis mb-4">Расходы</div>
+                        <canvas id="expenses"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <script src="libs/bootstrap.bundle.min.js"></script>
+<script src="libs/cdn.jsdelivr.net_npm_chart.js"></script>
+<script src="scripts/charts.js"></script>
 </body>
 </html>
